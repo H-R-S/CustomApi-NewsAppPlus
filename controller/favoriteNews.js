@@ -3,6 +3,8 @@ const favoriteNewsModel = require('../models/favoriteNewsSchema')
 const addFavoriteNews = async (req, res) => {
 
     let addingFavoriteNews = new favoriteNewsModel({
+
+        userUid: req.body.userUid,
         newsHead: req.body.newsHead,
         newsDes: req.body.newsDes,
         newsImg: req.body.newsImg,
