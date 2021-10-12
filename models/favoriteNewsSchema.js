@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 
 const favoriteNewsSchema = new mongoose.Schema({
 
+    userUid: {type: String},
     newsHead: {type: String},
     newsDes: {type: String},
     newsImg: {type: String},
